@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel='stylesheet' href='./styles.css' >
+</head>
+<body>
+  <header class='p-3 p-md-5'>
+    <div class='container'>
+      <div class='d-block d-md-flex justify-content-between'>
+        <div>
+          <img src="./assets/images/logo.svg" class='img-fluid' alt='logo'/>
+          <span class='float-right d-block d-md-none p-2'> 
+            <img src="./assets/images/icon-menu.svg" class='img-fluid menu' id='menu' alt='menu'/>
+          </span>
+        </div>
+        <nav class="nav d-none d-block nav-active" id="nav">
+          <img src="./assets/images/icon-menu-close.svg" class='img-fluid close' id='close' alt='icon-menu-close'/>
+          <ul class='p-0'>
+            <li class='d-block d-md-inline'>
+              <a href='#' class='p-3 sub-heading'>Home</a>
+            </li>
+            <li class='d-block d-md-inline'>
+              <a href='#' class='p-3 sub-heading'>New</a>
+            </li>
+            <li class='d-block d-md-inline'>
+              <a href='#' class='p-3 sub-heading'>Popular</a>
+            </li>
+            <li class='d-block d-md-inline'>
+              <a href='#' class='p-3 sub-heading'>Trending</a>
+            </li>
+            <li class='d-block d-md-inline'>
+              <a href='#' class='p-3 sub-heading'>Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <section>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <div>
+            <img src='./assets/images/image-web-3-desktop.jpg' class='img-fluid' alt='image-web-3-desktop' >
+          </div>
+          <div class='row mt-5 mb-5'>
+            <div class='col-md-6'>
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class='col-md-6'>
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </p>
+              <a href='#' class="read-more">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-md-4 bg-very-dark-blue text-white p-4'>
+          <h3 class='text-soft-orange'>New</h3>
+          <div>
+            <h4>
+              <a href="#" class='heading'>Hydrogen VS Electric Cars</a>
+            </h4>
+            <p>
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <hr>
+          <div>
+            <h4>
+              <a href="#" class='heading'>The Downsides of AI Artistry</a>
+            </h4>
+            <p>
+             What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </div>
+          <hr>
+          <div>
+            <h4>
+              <a href="#" class='heading'>Is VC Funding Drying Up?</a>
+            </h4>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='pt-4 pb-5'>
+    <div class='container'>
+      <div class="row no-gutters">
+
+        <div class='col-md-4 mb-3'>
+          <div class='row'>
+            <div class="col-6">
+              <img src='./assets/images/image-retro-pcs.jpg' class="img-fluid" alt='image-retro-pcs' >
+            </div>
+            <div class="col-6">
+              <h2 class='text-muted'>01</h2>
+              <h6>
+                <a href="#" class='sub-heading'>Reviving Retro PCs</a>
+              </h6>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-md-4 mb-3'>
+          <div class='row g-4'>
+            <div class="col-6">
+              <img src='./assets/images/image-top-laptops.jpg' class="img-fluid" alt='image-retro-pcs' >
+            </div>
+            <div class="col-6">
+              <h2 class='text-muted'>02</h2>
+              <h6>
+                <a href="#" class='sub-heading'>Top 10 Laptops of 2022</a>
+              </h6>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class='row'>
+            <div class="col-6">
+              <img src='./assets/images/image-gaming-growth.jpg' class="img-fluid" alt='image-retro-pcs' >
+            </div>
+            <div class="col-6">
+              <h2 class='text-muted '>03</h6>
+              <h6>
+                <a href="#" class='sub-heading'>The Growth of Gaming</a>
+              </h6>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+      </div>
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="github.com/modupimaphoto">modupimaphoto</a>.
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script>
+    const menu = document.getElementById('menu');
+    menu.addEventListener('click', () => {
+      const nav = document.getElementById('nav');
+
+      if(nav.classList.contains('nav-active')){
+        nav.classList.remove('nav-active')
+      }else{
+         nav.classList.add('nav-active')
+      }
+    })
+
+    const close = document.getElementById('close');
+    close.addEventListener('click', () => {
+      const nav = document.getElementById('nav');
+
+      if(nav.classList.contains('nav-active')){
+        nav.classList.remove('nav-active')
+      }else{
+         nav.classList.add('nav-active')
+      }
+    })
+  </script>
+</body>
+</html>

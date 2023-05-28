@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    /* Primary */
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    /* Neutral */
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish: blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+.bg-very-dark-blue {
+    background: var(--very-dark-blue);
+}
+.bg-off-white{
+    background: var(--off-white);
+}
+.bg-soft-red{
+    background: var(--soft-red);
+}
+.text-very-dark-blue {
+    color: var(--very-dark-blue);
+}
+.text-soft-orange{
+    color: var(--soft-orange);
+}
+.text-grayish-blue{
+    color: var(--grayish-blue);
+}
+.text-soft-red{
+    color: var(--soft-red);
+}
+body {
+	font-family: 'Inter', sans-serif;
+}
+body::before{
+    display: block;
+    content: " ";
+    height: 40px;
+}
+.close{
+    display: none;
+}
+@media screen and (max-width: 786px) {
+    nav{
+        background: var(--off-white);
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        transition: 0.4s
+    }
+    .nav-active{
+        margin-right: -1000px;
+        transition: 0.5s
+    }
+    nav ul{
+        margin-top: 150px;
+    }
+    nav li{
+        margin-bottom: 15px;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+    .menu, .close{
+        cursor: pointer;
+    }
+}
+.heading{
+    text-decoration: none;
+    color: var(--dark-grayish);
+    transition: 0.7s;
+}
+.heading:hover{
+    color: var(--soft-orange);
+    text-decoration: none;
+}
+.sub-heading{
+    text-decoration: none;
+    color:var(--very-dark-blue);
+    transition: 0.7s;
+}
+.sub-heading:hover{
+    text-decoration: none;
+    color:var(--soft-red);
+}
+.read-more{
+    padding: 10px;
+    background: var(--soft-red);
+    transition: 0.7s;
+    text-decoration: none;
+    width: 50%;
+    display: block;
+    color: white;
+    letter-spacing: 5px;
+}
+.read-more:hover{
+    background: var(--very-dark-blue);
+    color: white;
+    text-decoration: none;
+}
+.attribution{
+    padding: 10px;
+    text-align: center;
+}
